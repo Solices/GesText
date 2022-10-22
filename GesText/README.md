@@ -1,6 +1,5 @@
 # GesText
 <p> In order to use application on your own personal computer:
-<img src="">
 
 ## Steps
 <br />
