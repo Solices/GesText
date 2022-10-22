@@ -9,7 +9,7 @@ function Contact()
     </div>
   )
 }
-//did not want to put personal information here.
+//did not want to put personal information here, as this is a public resp.
 
 
 export default Contact;
