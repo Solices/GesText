@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  break-inside: avoid;  
+  page-break-inside: avoid;
+}
+@font-face {
+  font-family: "Poppin";
+  src: url(Fonts/Poppins-Regular.otf)
+}
+html{
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+body{
+  left: 0px;
+  top: 0px;
+  zoom: 100%;
+  display: grid;
+  height: 100%;
+  min-height: 100vh;
+  break-inside: avoid;
+  break-after: avoid;  
+  page-break-inside: avoid;
+  place-items: center;
+  background: linear-gradient(#2b1055, #273555);
+}
+canvas{
+  padding: 10px;
+  font-size: 17px;
+  width: 600px;
+  resize: none;
+  text-align: justify;
+  color: #FCFFE9;
+}
+textarea{
+  padding: 10px;
+  font-size: 17px;
+  width: 400px;
+  resize: none;
+  text-align: justify;
+  color: #FCFFE9;
+
+}
+textarea:focus{
+  outline-color: black;
+  border-color: #16a085;
+}
+p{
+  font-family: monospace;
+  color: white;
+}
+button{
+  font-weight: bold;
+  font-family: Verdana;
+  overflow: hidden;
+  color: black;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+button::after{
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+button:hover{
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5), -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+}
+button:hover::after{
+  transform: rotate(150deg);
+}
+.topbutton{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Verdana;
+  overflow: hidden;
+  color: black;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: transparent;
+  min-height: 10px;
+  font-family: serif;
+  top: 0px;
+  bottom: 1000px;
+  right: 0px;
+  height: 150px;
+  width: 2100px;
+  display: flex;
+  vertical-align: bottom;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(35px + 2vmin);
+  color: black;
+}
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+
+}
+b{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  
+}
+b:visited{
+  text-decoration: none;
+}
+b:hover{
+  text-decoration: none;
+}
+b:active{
+  text-decoration: none;
+}
+.menu ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+.menu ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: #2b1055;
+}
+
+.App-link {   
+  color: #61dafb;
+}
+.info{
+  break-inside: avoid;  
+  page-break-inside: avoid;
+}
+.text{
+  background: linear-gradient(#2b1055, #273555);
+  height: 100%;
+  align-items: center;
+  break-inside: avoid;  
+  page-break-inside: avoid;
+}
+.text p{
+  font-family: "Poppin";
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 41px;
+  word-spacing: 2px;
+  align-items: center;
+  width: 60%
+}
+h1
+{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 3em;
+  display: flex;
+  align-content: center;
+  font-family: "Poppin"
+}
+
+.text .info .section1{
+  background: linear-gradient(#2b1055, #5f677b);
+  height: 50%;
+}
+.text .info .section2{
+  background: linear-gradient(#2b1055, #5f677b);
+}
+.text .info .section3{
+  background: linear-gradient(#2b1055, #5f677b);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  left: 600px;
+  top: 400px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
