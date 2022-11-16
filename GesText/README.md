@@ -9,7 +9,7 @@
 <br/><br/>
 <b>Step 3.</b> Set up Google Cloud Storage SDK
 <br/><br/>
-<b>Step 4.</b>  Create new terminal in powershell
+<b>Step 4.</b>  Create new terminal in powershell (VSCode recommended)
 <br/><br/>
 <b>Step 5.</b> Use command 'npm start' to launch app
 <br/><br/>
