@@ -3,7 +3,7 @@
 
 ## Steps
 <br />
-<b>Step 1.</b> Install Node and put 'node_modules' folder into the 'GesText' folder.
+<b>Step 1.</b> Install Node and put 'node_modules' folder into the 'GesText' folder. https://nodejs.org/en/
 <br/><br/>
 <b>Step 2.</b> Use command 'npm install' in terminal
 <br/><br/>
